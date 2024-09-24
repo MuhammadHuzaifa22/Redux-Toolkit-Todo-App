@@ -1,1 +1,2 @@
-// yaha todos ke function like jaenge
+// yaha todos ke function likhe jaenge
+
