@@ -17,11 +17,14 @@ export const todoSlice = createSlice({
         },
         removeTodo: (state , action) =>{
             state.todosArray.splice(action.payload.index , 1)
+        },
+        editTodo: (state,action) =>{
+            state.todosArray[action.payload.index].title = action.payload.newValue;           
         }
     }
 })
 
 
 
-export const { addTodo , removeTodo } = todoSlice.actions
+export const { addTodo , removeTodo,editTodo } = todoSlice.actions
 export default todoSlice.reducer
